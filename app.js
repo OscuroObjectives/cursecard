@@ -318,7 +318,7 @@ I understand that my wallet address, my name, and the date of signing will be pe
 
 Only after completing this authorization may custody of the Curse Card be transferred.
 
-This signature confirms my voluntary participation in the Curse Card project.`;
+This signature confirms the spiritual and contractual bounding of the Curse Card asset and the my ownership of the physical Curse Card. After the transfer has been made, I will take on the energy of the Curse Card which passes on the curse of bad luck on to me until I give both the card and Curse Card asset to another person.`;
 
         // MetaMask Signature Popup
         await signer.signMessage(message);
