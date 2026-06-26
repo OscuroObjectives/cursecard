@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curse Card Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="backgroundQuestions">
+
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+    <span>?</span>
+
+</div>
+
+<div class="container">
+
+    <img
+        class="cardImage"
+        src="https://aqua-legislative-mongoose-157.mypinata.cloud/ipfs/bafybeidecu7gls2okz3d3oxhborfx36vtj7jlldkyh4h7tez7wbdh5mgjq"
+        alt="Curse Card"
+    >
+
+    <h1>CURSE CARD</h1>
+
+    <h2>A Unique Traveling Artifact</h2>
+
+    <div class="uploadBox">
+
+        <label>
+
+            Upload Curse Card Image
+
+        </label>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+        >
+
+    </div>
+
+    <button id="verifyImageButton">
+
+        Verify Curse Card
+
+    </button>
+
+    <button id="connectButton">
+
+        Connect MetaMask
+
+    </button>
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter Your Name"
+        maxlength="50"
+    >
+
+    <button id="signButton">
+
+        Sign Contract
+
+    </button>
+
+    <div id="status">
+
+        Awaiting Image Verification...
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

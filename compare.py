@@ -5,7 +5,7 @@ import cv2
 # -------------------------
 
 master = cv2.imread("master.jpg", cv2.IMREAD_GRAYSCALE)
-test = cv2.imread("test.jpeg", cv2.IMREAD_GRAYSCALE)
+test = cv2.imread("uploads/test.jpeg", cv2.IMREAD_GRAYSCALE)
 
 if master is None:
     print("Could not find master.jpg")
@@ -78,9 +78,3 @@ result = cv2.drawMatches(
     None,
     flags=2
 )
-
-cv2.imshow("Matches", result)
-
-cv2.waitKey(0)
-
-cv2.destroyAllWindows()

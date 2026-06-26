@@ -1,0 +1,392 @@
+/* =====================================================
+   CURSE CARD PORTAL
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#090909;
+
+    color:#efe3c4;
+
+    font-family:'Special Elite',cursive;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* -------------------------
+Question Marks
+------------------------- */
+
+.backgroundQuestions{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.backgroundQuestions span{
+
+    position:absolute;
+
+    color:rgba(255,255,255,.13);
+
+    font-size:80px;
+
+    font-family:"Creepster",cursive;
+
+    user-select:none;
+
+}
+
+.backgroundQuestions span:nth-child(1){
+left:4%;
+top:4%;
+font-size:120px;
+}
+
+.backgroundQuestions span:nth-child(2){
+left:17%;
+top:18%;
+font-size:70px;
+}
+
+.backgroundQuestions span:nth-child(3){
+right:8%;
+top:5%;
+font-size:100px;
+color:#8b1e1e;
+}
+
+.backgroundQuestions span:nth-child(4){
+right:14%;
+top:32%;
+font-size:70px;
+}
+
+.backgroundQuestions span:nth-child(5){
+left:7%;
+bottom:28%;
+font-size:90px;
+}
+
+.backgroundQuestions span:nth-child(6){
+right:6%;
+bottom:22%;
+font-size:115px;
+}
+
+.backgroundQuestions span:nth-child(7){
+left:42%;
+top:8%;
+font-size:45px;
+}
+
+.backgroundQuestions span:nth-child(8){
+left:76%;
+bottom:10%;
+font-size:60px;
+color:#8b1e1e;
+}
+
+.backgroundQuestions span:nth-child(9){
+left:32%;
+bottom:6%;
+font-size:55px;
+}
+
+.backgroundQuestions span:nth-child(10){
+right:32%;
+top:60%;
+font-size:65px;
+}
+
+/* -------------------------
+Container
+------------------------- */
+
+.container{
+
+    width:92%;
+
+    max-width:700px;
+
+    padding:35px;
+
+    text-align:center;
+
+    background:#111;
+
+    border:2px solid #7a6846;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,.85),
+    inset 0 0 40px rgba(255,255,255,.04);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* -------------------------
+Image
+------------------------- */
+
+.cardImage{
+
+    width:260px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    transform:rotate(-6deg);
+
+    border:5px solid #d8c9a5;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.08),
+    0 0 60px rgba(150,20,20,.35);
+
+}
+
+/* -------------------------
+Titles
+------------------------- */
+
+h1{
+
+    font-family:"Creepster",cursive;
+
+    font-size:70px;
+
+    color:#e7d7b2;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    font-size:24px;
+
+    color:#d8b45f;
+
+    margin-bottom:35px;
+
+}
+
+/* -------------------------
+Upload
+------------------------- */
+
+.uploadBox{
+
+    margin-bottom:20px;
+
+}
+
+.uploadBox label{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+
+}
+
+input[type=file]{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:2px solid #7c6c52;
+
+    background:#0f0f0f;
+
+    color:white;
+
+}
+
+/* -------------------------
+Name
+------------------------- */
+
+#nameInput{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    border:2px solid #7c6c52;
+
+    background:#0f0f0f;
+
+    color:white;
+
+    font-size:18px;
+
+    font-family:'Special Elite',cursive;
+
+}
+
+/* -------------------------
+Buttons
+------------------------- */
+
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:18px;
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:24px;
+
+    font-family:'Special Elite',cursive;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* Verify */
+
+#verifyImageButton{
+
+    background:#2d2d2d;
+
+    color:#efe3c4;
+
+}
+
+/* Wallet */
+
+#connectButton{
+
+    background:#efe3c4;
+
+    color:#111;
+
+}
+
+/* Sign */
+
+#signButton{
+
+    background:#8f1d16;
+
+    color:white;
+
+    font-size:30px;
+
+    letter-spacing:2px;
+
+    box-shadow:
+    0 0 18px rgba(255,0,0,.25);
+
+}
+
+#signButton:hover{
+
+    background:#b1271f;
+
+}
+
+/* -------------------------
+Status
+------------------------- */
+
+#status{
+
+    margin-top:28px;
+
+    padding:20px;
+
+    border:2px solid #665741;
+
+    border-radius:12px;
+
+    background:#090909;
+
+    color:#d8d8d8;
+
+    font-size:20px;
+
+    min-height:70px;
+
+}
+
+/* -------------------------
+Mobile
+------------------------- */
+
+@media(max-width:700px){
+
+    h1{
+
+        font-size:48px;
+
+    }
+
+    .cardImage{
+
+        width:210px;
+
+    }
+
+    button{
+
+        font-size:20px;
+
+    }
+
+}
